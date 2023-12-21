@@ -59,7 +59,7 @@ class Stack:
 
 
 def builder_level_towers(disc: int, total_disc: int) -> str:
-    """Генерирует уровень башни."""
+    """Генерирует горизонтальный уровень башен."""
 
     result = ''
     if disc == 0:
@@ -76,8 +76,8 @@ def show_towers(towers: dict[str, Stack], total_disc: int) -> None:
 
     - tower_a, tower_b, tower_c - Полное копирование списка дисков башен \
         из экземпляров класса Stack хранящегося по ключу в словаре 'towers',\
-         и заполнение их нулями (total_disc + 1) \
-         для полноценного графического отображения башни в терминале.
+        и заполнение их нулями (total_disc + 1) \
+        для полноценного графического отображения башни в терминале.
     """
 
     tower_a = [0] * ((total_disc + 1) - len(towers[TOWER_1].result)) + towers[
