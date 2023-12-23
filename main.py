@@ -59,7 +59,7 @@ class Stack:
 
 
 def builder_level_towers(disc: int, total_disc: int) -> str:
-    """Генерирует горизонтальный уровень башен."""
+    """Генерирует горизонтальный уровень башни."""
 
     result = ''
     if disc == 0:
