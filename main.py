@@ -141,11 +141,9 @@ def main(total_disc: int) -> None:
     )
     show_towers(towers, total_disc)
     print(
-        (
-            f'Переместите диск с одной башни на другую.'
-            f'\n\tПример команды: {TOWER_1}{TOWER_3} or {TOWER_1}{TOWER_2} or'
-            f'  {TOWER_3}{TOWER_2} etc.\n',
-        ),
+            f'Переместите диск с одной башни на другую.\n'
+            f'Пример команды: {TOWER_1}{TOWER_3} or {TOWER_1}{TOWER_2} or'
+            f' {TOWER_3}{TOWER_2} etc.\n',
     )
     while True:
         user_input = str(input('Переместите диск:\t')).strip().upper()
